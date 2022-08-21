@@ -1,7 +1,8 @@
 from sklearn.metrics import fbeta_score, precision_score, recall_score
+from sklearn.ensemble import RandomForestClassifier
+import pickle
 
 
-# Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train):
     """
     Trains a machine learning model and returns it.
@@ -14,11 +15,12 @@ def train_model(X_train, y_train):
         Labels.
     Returns
     -------
-    model
-        Trained machine learning model.
+    model: sklearn.ensemble.RandomForestClassifier
+        Trained RF machine learning model.
     """
-
-    pass
+    model = RandomForestClassifier(n_estimators=20, min_samples_split=5)
+    model.fit(X_train, y_train)
+    return model
 
 
 def compute_model_metrics(y, preds):
@@ -48,7 +50,7 @@ def inference(model, X):
 
     Inputs
     ------
-    model : ???
+    model : sklearn.ensemble.RandomForestClassifier
         Trained machine learning model.
     X : np.array
         Data used for prediction.
@@ -57,4 +59,30 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-    pass
+    preds = model.predict(X)
+    return preds
+
+
+def save_model_encoder(model, encoder, lb):
+    """
+    Saves model and encoders used in the training of the model
+
+    Inputs
+    ------
+    model : sklearn.ensemble.RandomForestClassifier
+        Trained machine learning model.
+    encoder : sklearn.preprocessing._encoders.???
+        Trained sklearn Encoder.
+    lb : sklearn.preprocessing._label.LabelBinarizer
+        Trained sklearn LabelBinarizer.
+
+    Returns
+    -------
+    None
+    """
+    with open("../model/rf.pkl", 'wb') as f:
+        pickle.dump(model, f)
+    with open("../model/encoder.pkl", 'wb') as f:
+        pickle.dump(encoder, f)
+    with open("../model/lb.pkl", 'wb') as f:
+        pickle.dump(lb, f)
