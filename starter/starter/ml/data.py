@@ -1,9 +1,26 @@
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
+import pandas as pd
+
+
+def load_data(path):
+    """ Read input dataset
+    Inputs
+    ------
+    path: string
+          Path to the input file
+
+    Outputs
+    ------
+    data: pd.DataFrame
+          Pandas dataframe containing input data
+    """
+    data = pd.read_csv(path)
+    return data
 
 
 def process_data(
-    X, categorical_features=[], label=None, training=True, encoder=None, lb=None
+        X, categorical_features=[], label=None, training=True, encoder=None, lb=None
 ):
     """ Process the data used in the machine learning pipeline.
 

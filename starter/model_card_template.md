@@ -1,18 +1,21 @@
 # Model Card
 
-For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
-
 ## Model Details
+João Pires created this model. It is a Random Forest model trained with the default sklearn hyperparameters, except n_estimators=20 and min_samples_split=5.
 
 ## Intended Use
+This model should be used to predict if a person's salary is higher or lower than 50k based on a handful of attributes.
 
-## Training Data
+## Data
+The data was obtained from the UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/census+income).
 
-## Evaluation Data
+The original data set has 32561 rows, and an 80-20 split was used to break this into a train and test set. No stratification was done. To use the data for training a One Hot Encoder was used on the features and a label binarizer was used on the labels.
 
 ## Metrics
-_Please include the metrics used and your model's performance on those metrics._
+The model was evaluated based on precision, recall and F-beta score. The values were 0.738, 0.629 and 0.679, respectively.
 
 ## Ethical Considerations
+No ethical considerations were taken into account while training the model.
 
 ## Caveats and Recommendations
+No hyperparameter optimization was performed, the model performance could be improved if the optimization was performed.
