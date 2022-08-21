@@ -86,3 +86,36 @@ def save_model_encoder(model, encoder, lb):
         pickle.dump(encoder, f)
     with open("../model/lb.pkl", 'wb') as f:
         pickle.dump(lb, f)
+
+
+def slice_metrics(cat_feature, data, y, preds):
+    """
+    For a given categorical feature, compute model performance on slices and outputs results to a file.
+
+    Inputs
+    ------
+    cat_feature : string
+        Known labels, binarized.
+    y : np.array
+        Known labels, binarized.
+    preds : np.array
+        Predicted labels, binarized.
+    Returns
+    -------
+    None
+    """
+    for cat in data[cat_feature].unique():
+        # Reset index
+        data_temp = data.reset_index()
+        # Find index that match the slice
+        data_temp = data_temp[data_temp[cat_feature] == cat]
+        cat_index = data_temp.index.values
+        # Calculate results on the slice
+        y_temp = y[cat_index]
+        preds_temp = preds[cat_index]
+        precision, recall, fbeta = compute_model_metrics(y_temp, preds_temp)
+        # Write the results to the output file
+        with open("slice_output.txt", "a") as f:
+            f.write('Feature "' + cat_feature + '", Slice "' + cat + '"\n')
+            f.write('Precision: ' + str(precision) + ', Recall: ' + str(recall) + ', Fbeta: ' + str(fbeta) + '\n')
+            f.write("--------\n")

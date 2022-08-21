@@ -2,7 +2,7 @@
 
 from sklearn.model_selection import train_test_split
 from ml.data import load_data, process_data
-from ml.model import train_model, compute_model_metrics, inference, save_model_encoder
+from ml.model import train_model, compute_model_metrics, inference, save_model_encoder, slice_metrics
 
 if __name__ == "__main__":
     # Read data
@@ -32,7 +32,11 @@ if __name__ == "__main__":
     # Predict using model
     preds = inference(model, X_test)
     # Model results
-    precision, recall, fbeta = compute_model_metrics(y_test, preds)
-    print(precision, recall, fbeta)
+    # Initialize blank file for the slice performance
+    with open("slice_output.txt", "w") as f:
+        pass
+    # Compute model results on the slices of categorical variables
+    for cat_feat in cat_features:
+        slice_metrics(cat_feat, test, y_test, preds)
     # Save artifacts
     save_model_encoder(model, encoder, lb)

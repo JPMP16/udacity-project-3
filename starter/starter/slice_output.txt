@@ -1,0 +1,297 @@
+Feature "workclass", Slice "Private"
+Precision: 0.7320574162679426, Recall: 0.6029556650246305, Fbeta: 0.6612641815235007
+--------
+Feature "workclass", Slice "State-gov"
+Precision: 0.8026315789473685, Recall: 0.7721518987341772, Fbeta: 0.7870967741935484
+--------
+Feature "workclass", Slice "Self-emp-inc"
+Precision: 0.7279411764705882, Recall: 0.7734375, Fbeta: 0.7499999999999999
+--------
+Feature "workclass", Slice "Federal-gov"
+Precision: 0.7068965517241379, Recall: 0.7321428571428571, Fbeta: 0.719298245614035
+--------
+Feature "workclass", Slice "Self-emp-not-inc"
+Precision: 0.7349397590361446, Recall: 0.5041322314049587, Fbeta: 0.5980392156862745
+--------
+Feature "workclass", Slice "?"
+Precision: 0.5652173913043478, Recall: 0.52, Fbeta: 0.5416666666666667
+--------
+Feature "workclass", Slice "Local-gov"
+Precision: 0.6915887850467289, Recall: 0.6271186440677966, Fbeta: 0.6577777777777778
+--------
+Feature "workclass", Slice "Never-worked"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "education", Slice "Bachelors"
+Precision: 0.7522123893805309, Recall: 0.7606263982102909, Fbeta: 0.7563959955506118
+--------
+Feature "education", Slice "Some-college"
+Precision: 0.6875, Recall: 0.5, Fbeta: 0.5789473684210527
+--------
+Feature "education", Slice "Assoc-acdm"
+Precision: 0.7272727272727273, Recall: 0.41379310344827586, Fbeta: 0.5274725274725275
+--------
+Feature "education", Slice "9th"
+Precision: 1.0, Recall: 0.2857142857142857, Fbeta: 0.4444444444444445
+--------
+Feature "education", Slice "HS-grad"
+Precision: 0.5358851674641149, Recall: 0.37333333333333335, Fbeta: 0.4400785854616896
+--------
+Feature "education", Slice "Assoc-voc"
+Precision: 0.6981132075471698, Recall: 0.5, Fbeta: 0.5826771653543307
+--------
+Feature "education", Slice "Masters"
+Precision: 0.8011049723756906, Recall: 0.8630952380952381, Fbeta: 0.8309455587392549
+--------
+Feature "education", Slice "11th"
+Precision: 1.0, Recall: 0.3076923076923077, Fbeta: 0.47058823529411764
+--------
+Feature "education", Slice "1st-4th"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "education", Slice "Preschool"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "education", Slice "12th"
+Precision: 0.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "education", Slice "5th-6th"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "education", Slice "7th-8th"
+Precision: 0.3333333333333333, Recall: 0.16666666666666666, Fbeta: 0.2222222222222222
+--------
+Feature "education", Slice "10th"
+Precision: 1.0, Recall: 0.3, Fbeta: 0.4615384615384615
+--------
+Feature "education", Slice "Prof-school"
+Precision: 0.9166666666666666, Recall: 0.9166666666666666, Fbeta: 0.9166666666666666
+--------
+Feature "education", Slice "Doctorate"
+Precision: 0.8378378378378378, Recall: 0.9117647058823529, Fbeta: 0.8732394366197184
+--------
+Feature "marital-status", Slice "Married-civ-spouse"
+Precision: 0.7221764220939819, Recall: 0.6733282090699462, Fbeta: 0.6968973747016707
+--------
+Feature "marital-status", Slice "Never-married"
+Precision: 0.8076923076923077, Recall: 0.42424242424242425, Fbeta: 0.5562913907284768
+--------
+Feature "marital-status", Slice "Divorced"
+Precision: 0.7435897435897436, Recall: 0.29, Fbeta: 0.41726618705035967
+--------
+Feature "marital-status", Slice "Married-spouse-absent"
+Precision: 0.6666666666666666, Recall: 0.3333333333333333, Fbeta: 0.4444444444444444
+--------
+Feature "marital-status", Slice "Widowed"
+Precision: 1.0, Recall: 0.2777777777777778, Fbeta: 0.4347826086956522
+--------
+Feature "marital-status", Slice "Separated"
+Precision: 1.0, Recall: 0.35294117647058826, Fbeta: 0.5217391304347826
+--------
+Feature "marital-status", Slice "Married-AF-spouse"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "occupation", Slice "Exec-managerial"
+Precision: 0.7575757575757576, Recall: 0.7352941176470589, Fbeta: 0.746268656716418
+--------
+Feature "occupation", Slice "Adm-clerical"
+Precision: 0.6666666666666666, Recall: 0.4954128440366973, Fbeta: 0.5684210526315789
+--------
+Feature "occupation", Slice "Prof-specialty"
+Precision: 0.8042328042328042, Recall: 0.7855297157622739, Fbeta: 0.7947712418300654
+--------
+Feature "occupation", Slice "Farming-fishing"
+Precision: 0.8461538461538461, Recall: 0.4583333333333333, Fbeta: 0.5945945945945945
+--------
+Feature "occupation", Slice "Craft-repair"
+Precision: 0.6470588235294118, Recall: 0.4583333333333333, Fbeta: 0.5365853658536585
+--------
+Feature "occupation", Slice "Tech-support"
+Precision: 0.8095238095238095, Recall: 0.6071428571428571, Fbeta: 0.6938775510204083
+--------
+Feature "occupation", Slice "Sales"
+Precision: 0.7411764705882353, Recall: 0.6146341463414634, Fbeta: 0.6719999999999999
+--------
+Feature "occupation", Slice "Other-service"
+Precision: 0.5454545454545454, Recall: 0.25, Fbeta: 0.34285714285714286
+--------
+Feature "occupation", Slice "Machine-op-inspct"
+Precision: 0.42857142857142855, Recall: 0.2222222222222222, Fbeta: 0.29268292682926833
+--------
+Feature "occupation", Slice "Priv-house-serv"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "occupation", Slice "Transport-moving"
+Precision: 0.43902439024390244, Recall: 0.3333333333333333, Fbeta: 0.37894736842105264
+--------
+Feature "occupation", Slice "?"
+Precision: 0.5652173913043478, Recall: 0.52, Fbeta: 0.5416666666666667
+--------
+Feature "occupation", Slice "Protective-serv"
+Precision: 0.5909090909090909, Recall: 0.5531914893617021, Fbeta: 0.5714285714285714
+--------
+Feature "occupation", Slice "Handlers-cleaners"
+Precision: 0.8333333333333334, Recall: 0.3333333333333333, Fbeta: 0.47619047619047616
+--------
+Feature "relationship", Slice "Husband"
+Precision: 0.7255460588793922, Recall: 0.6743159752868491, Fbeta: 0.6989935956084172
+--------
+Feature "relationship", Slice "Not-in-family"
+Precision: 0.7926829268292683, Recall: 0.3939393939393939, Fbeta: 0.5263157894736842
+--------
+Feature "relationship", Slice "Other-relative"
+Precision: 1.0, Recall: 0.25, Fbeta: 0.4
+--------
+Feature "relationship", Slice "Wife"
+Precision: 0.7025316455696202, Recall: 0.6851851851851852, Fbeta: 0.69375
+--------
+Feature "relationship", Slice "Own-child"
+Precision: 0.6, Recall: 0.23076923076923078, Fbeta: 0.33333333333333337
+--------
+Feature "relationship", Slice "Unmarried"
+Precision: 0.8421052631578947, Recall: 0.26229508196721313, Fbeta: 0.4
+--------
+Feature "race", Slice "White"
+Precision: 0.7305140961857379, Recall: 0.6310888252148997, Fbeta: 0.6771714066102998
+--------
+Feature "race", Slice "Asian-Pac-Islander"
+Precision: 0.76, Recall: 0.5846153846153846, Fbeta: 0.6608695652173914
+--------
+Feature "race", Slice "Black"
+Precision: 0.6545454545454545, Recall: 0.5070422535211268, Fbeta: 0.5714285714285715
+--------
+Feature "race", Slice "Other"
+Precision: 0.6, Recall: 0.6, Fbeta: 0.6
+--------
+Feature "race", Slice "Amer-Indian-Eskimo"
+Precision: 1.0, Recall: 0.6, Fbeta: 0.7499999999999999
+--------
+Feature "sex", Slice "Male"
+Precision: 0.7288888888888889, Recall: 0.6381322957198443, Fbeta: 0.6804979253112033
+--------
+Feature "sex", Slice "Female"
+Precision: 0.7268041237113402, Recall: 0.5486381322957199, Fbeta: 0.6252771618625278
+--------
+Feature "native-country", Slice "United-States"
+Precision: 0.726672171758877, Recall: 0.6276747503566333, Fbeta: 0.6735553004209721
+--------
+Feature "native-country", Slice "South"
+Precision: 0.3333333333333333, Recall: 0.25, Fbeta: 0.28571428571428575
+--------
+Feature "native-country", Slice "Mexico"
+Precision: 0.6666666666666666, Recall: 0.2222222222222222, Fbeta: 0.3333333333333333
+--------
+Feature "native-country", Slice "Thailand"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Columbia"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "?"
+Precision: 0.7666666666666667, Recall: 0.696969696969697, Fbeta: 0.7301587301587302
+--------
+Feature "native-country", Slice "Nicaragua"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "India"
+Precision: 0.7142857142857143, Recall: 0.625, Fbeta: 0.6666666666666666
+--------
+Feature "native-country", Slice "Taiwan"
+Precision: 0.6, Recall: 0.75, Fbeta: 0.6666666666666665
+--------
+Feature "native-country", Slice "Italy"
+Precision: 1.0, Recall: 0.25, Fbeta: 0.4
+--------
+Feature "native-country", Slice "Haiti"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "Canada"
+Precision: 0.7, Recall: 0.875, Fbeta: 0.7777777777777777
+--------
+Feature "native-country", Slice "Poland"
+Precision: 0.6666666666666666, Recall: 1.0, Fbeta: 0.8
+--------
+Feature "native-country", Slice "Philippines"
+Precision: 0.8888888888888888, Recall: 0.7272727272727273, Fbeta: 0.7999999999999999
+--------
+Feature "native-country", Slice "Germany"
+Precision: 0.8333333333333334, Recall: 0.5555555555555556, Fbeta: 0.6666666666666667
+--------
+Feature "native-country", Slice "Greece"
+Precision: 0.0, Recall: 1.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "Jamaica"
+Precision: 1.0, Recall: 0.5, Fbeta: 0.6666666666666666
+--------
+Feature "native-country", Slice "China"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "England"
+Precision: 0.4, Recall: 0.4, Fbeta: 0.4000000000000001
+--------
+Feature "native-country", Slice "Japan"
+Precision: 0.8333333333333334, Recall: 0.7142857142857143, Fbeta: 0.7692307692307692
+--------
+Feature "native-country", Slice "Outlying-US(Guam-USVI-etc)"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Guatemala"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Puerto-Rico"
+Precision: 1.0, Recall: 0.3333333333333333, Fbeta: 0.5
+--------
+Feature "native-country", Slice "Vietnam"
+Precision: 0.5, Recall: 0.5, Fbeta: 0.5
+--------
+Feature "native-country", Slice "Ireland"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "El-Salvador"
+Precision: 1.0, Recall: 0.5, Fbeta: 0.6666666666666666
+--------
+Feature "native-country", Slice "Cuba"
+Precision: 1.0, Recall: 0.8, Fbeta: 0.888888888888889
+--------
+Feature "native-country", Slice "Portugal"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Hong"
+Precision: 1.0, Recall: 0.5, Fbeta: 0.6666666666666666
+--------
+Feature "native-country", Slice "Trinadad&Tobago"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Dominican-Republic"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Iran"
+Precision: 1.0, Recall: 0.25, Fbeta: 0.4
+--------
+Feature "native-country", Slice "Cambodia"
+Precision: 1.0, Recall: 0.3333333333333333, Fbeta: 0.5
+--------
+Feature "native-country", Slice "Laos"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "Ecuador"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "Yugoslavia"
+Precision: 0.5, Recall: 0.5, Fbeta: 0.5
+--------
+Feature "native-country", Slice "Peru"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Hungary"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Scotland"
+Precision: 1.0, Recall: 0.0, Fbeta: 0.0
+--------
+Feature "native-country", Slice "France"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
+Feature "native-country", Slice "Honduras"
+Precision: 1.0, Recall: 1.0, Fbeta: 1.0
+--------
