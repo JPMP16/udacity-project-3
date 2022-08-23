@@ -1,8 +1,8 @@
 # Put the code for your API here.
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
-from starter.ml.data import process_data
-from starter.ml.model import inference
+from starter.starter.ml.data import process_data
+from starter.starter.ml.model import inference
 import pickle
 import json
 import pandas as pd
@@ -74,11 +74,11 @@ async def model_inference(data: Input):
     df = pd.DataFrame({k: [v] for k, v in data_dict.items()})
     df.columns = cols
     # Load inference artifacts
-    with open('model/rf.pkl', 'rb') as f:
+    with open('starter/model/rf.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('model/lb.pkl', 'rb') as f:
+    with open('starter/model/lb.pkl', 'rb') as f:
         lb = pickle.load(f)
-    with open('model/encoder.pkl', 'rb') as f:
+    with open('starter/model/encoder.pkl', 'rb') as f:
         encoder = pickle.load(f)
     cat_features = [
         "workclass",
