@@ -30,11 +30,13 @@ def rf():
     return rf
 
 
+# test train_model function, test that it return the appropriate model object
 def test_train_model(X, y):
     rf = starter.starter.ml.model.train_model(X, y)
     assert isinstance(rf, RandomForestClassifier)
 
 
+# test compute_model_metrics function, test that the metrics are in the correct format
 def test_compute_model_metrics(y, preds):
     precision, recall, fbeta = starter.starter.ml.model.compute_model_metrics(y, preds)
     assert isinstance(precision, float)
@@ -42,6 +44,7 @@ def test_compute_model_metrics(y, preds):
     assert isinstance(fbeta, float)
 
 
+# test inference function, test that the predictions are in the expected format
 def test_inference(rf, X):
     preds = starter.starter.ml.model.inference(rf, X)
     assert isinstance(preds, np.ndarray)
