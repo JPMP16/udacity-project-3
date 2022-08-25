@@ -1,4 +1,4 @@
-# Put the code for your API here.
+# API code
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from starter.starter.ml.data import process_data
@@ -10,6 +10,7 @@ import pandas as pd
 app = FastAPI()
 
 
+# Input data model
 class Input(BaseModel):
     age: int
     workclass: str
@@ -47,12 +48,13 @@ class Input(BaseModel):
             }
         }
 
-
+# Welcome message
 @app.get("/")
 async def welcome():
     return {"message": "Welcome to the API"}
 
 
+# Predict Salary
 @app.post("/infer")
 async def model_inference(data: Input):
     # Read data
