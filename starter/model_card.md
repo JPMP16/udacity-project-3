@@ -15,7 +15,7 @@ The original data set has 32561 rows, and an 80-20 split was used to break this 
 The model was evaluated based on precision, recall and F-beta score. The values were 0.738, 0.629 and 0.679, respectively.
 
 ## Ethical Considerations
-No ethical considerations were taken into account while training the model.
+The Aequitas package was used to run bias checks on race, sex, education, marital status and work class. The results were that the model is overall fair as no bias was detected either at the unsupervised or supervised level. This implies fairness in the underlying data and in the model.
 
 ## Caveats and Recommendations
 No hyperparameter optimization was performed, the model performance could be improved if the optimization was performed.
